@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script type="text/jsx">
+        no/** @jsx React.DOM */
+        React.render(
+            React.createElement('h1', null, 'Hello!'),
+            document.getElementById("container")
+        );
+    </script>
+<script type="text/javascript" src="index_bundle.js"></script></body>
+
+</html>
