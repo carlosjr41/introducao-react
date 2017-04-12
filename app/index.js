@@ -1,12 +1,17 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var HelloWorld = React.createClass({
-  render: function(){
+require('./index.css');
+
+class App extends React.Component {
+  render() {
     return (
       <div>
-        Hello, {this.props.name}
+        HelloWorld
       </div>
+
     )
   }
-});
-ReactDOM.render(<HelloWorld name="Carlos"/>, document.getElementById('app'));
+}
+
+
+ReactDOM.render(<App/>, document.getElementById('app'));
