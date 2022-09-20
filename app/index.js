@@ -1,8 +1,8 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-require('./index.css');
+import { Component } from 'react';
+import { render as _render } from 'react-dom';
+import './index.css';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
@@ -14,4 +14,4 @@ class App extends React.Component {
 }
 
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+_render(<App/>, document.getElementById('app'));
